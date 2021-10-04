@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
+
 @section('conteudo')
 <div class="row">
         <div class="col-md-12 text-center">

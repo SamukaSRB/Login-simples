@@ -23,3 +23,15 @@ Route::get('/usuario_email_enviado','usuarioControler@emailEnviado');
 
 //
 Route::get('/dashboard','produtoControler@index');
+
+
+
+//Produtos
+Route::get('/admin','produtoControler@index')->name('product.admin');
+Route::get('/show','produtoControler@show')->name('product.show');
+Route::get('/create','produtoControler@create')->name('create.product');
+Route::post('/store','produtoControler@store')->name('product.store');
+Route::get('/edit/product/{id}','produtoControler@edit');
+Route::post('/update/product/{id}','produtoControler@update');
+Route::get('/delete/product/{id}','produtoControler@delete');
+

@@ -1,9 +1,9 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @section('conteudo')
 
         {{-- Apresentação de erros --}}
-        @include('includes.erro')
+        @include('admin.includes.erro')
 
         {{-- Formulario de Login --}}
         <div class="login-form">
@@ -26,8 +26,8 @@
 
                <div class="field">
                 <div class="fas fa-lock"></div>
-                <input type="password" name="text_repetir" placeholder="Repitir a senha">
-           </div>
+                <input type="password" name="text_repetir" placeholder="Repetir a senha">
+               </div>
 
                <div class="field">
                 <div class="fas fa-envelope"></div>

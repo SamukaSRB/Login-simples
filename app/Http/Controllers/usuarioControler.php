@@ -15,10 +15,10 @@ class usuarioControler extends Controller
 {
 
     public function index(){
-       return view('login');
+       return view('admin.login');
     }
     public function login(){
-        return view('usuario_frm_criar');
+        return view('admin.usuario_frm_criar');
     }
     public function registarUsuario(Request $request){
 
@@ -50,7 +50,7 @@ class usuarioControler extends Controller
 
         if(isset($dados)==0){
             $erros_bd = ['O usuário não existe'];
-            return view('login',compact('erros_bd'));
+            return view('admin.login',compact('erros_bd'));
         }
         if(!Hash::check($request->text_senha, $dados->senha)){
             $erros_bd = ['A senha está incorreta'];
@@ -70,7 +70,7 @@ class usuarioControler extends Controller
         return redirect('/');
     }
     public function recuperarSenha(){
-        return view('usuario_frm_recuperar_senha');
+        return view('admin.usuario_frm_recuperar_senha');
     }
     public function executarRecuperarSenha(Request $request){
 
@@ -111,7 +111,7 @@ $2y$10$vPr65FLo2M4p.y9vAQV70uA2Vioo2tuYwr5C7mFjPXydqPJ6COQji
 
     }
     public function emailEnviado(){
-        return view('usuario_email_enviado');
+        return view('admin.usuario_email_enviado');
     }
 
 

@@ -1,8 +1,9 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
+
 @section('conteudo')
 
 {{-- Apresentação de erros --}}
-@include('includes.erro')
+@include('admin.includes.erro')
 
     {{-- Formulario de Login --}}
     <div class="login-form">
