@@ -21,16 +21,17 @@ background:#a3190f;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background: #DAA520;
+    background: #fff;
   }
   .login-form{
+
     position: relative;
     width: 370px;
-    height: auto;
-    background: #1C1C1C;
-    padding: 40px 35px 60px;
+    height: 500px;
+    background: 	#6495ED;
+    padding: 2px 35px 60px;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid #6495ED;
     border-radius: 7px;
     box-shadow: inset 0 0 1px #272727;
   }
@@ -41,10 +42,10 @@ background:#a3190f;
     letter-spacing: 2px;
   }
   form{
-    margin-top: 20px;
+    margin-top: 10px;
   }
   form .field{
-    margin-top: 20px;
+    margin-top: 5px;
     display: flex;
   }
   .field .fas{
@@ -109,7 +110,8 @@ background:#a3190f;
     color: #868686;
   }
   .link a{
-    color: #339933;
+    color: #fff;
+    font-size: 20px;
     text-decoration: none;
   }
   .link a:hover{
